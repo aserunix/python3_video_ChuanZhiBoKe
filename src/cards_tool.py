@@ -63,7 +63,7 @@ def search_card():
     for card_dict in card_list:
         if card_dict["name"] ==find_name:
             print(card_dict)
-            return
+            break
     else:
         print("can not find [{0}]".format(find_name))
 #     print("搜索名片")
