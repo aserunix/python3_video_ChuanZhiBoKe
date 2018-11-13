@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+from cards_tool import *
+from re import search
 
 while True:
-    
+    # TODO 显示功能菜单
+    show_menu()
     
     action_str=input("请选择希望执行的操作：")
     print("您选择的操作是: 【{0}】".format(action_str))
@@ -12,14 +15,13 @@ while True:
     if action_str in ["1","2","3"]:
         # 1  新增名片
             if action_str=="1":
-                pass
+                new_card()
         # 2  显示全部
             elif action_str=="2":
-                pass
+                show_all()
         # 3  查询名片
             elif action_str=="3":
-                pass
-        pass
+                search_card( )
     
     # 0 exit
     elif action_str=="0":
